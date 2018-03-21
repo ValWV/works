@@ -1,0 +1,108 @@
+<head>
+<meta name="viewport" content="initial-scale=1">  
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+<link rel="stylesheet" href="http://www.justinaguilar.com/animations/css/animations.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+<link rel="stylesheet" type="text/css" href="https://github.com/ValWV/menu/blob/master/public_html/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link href='C:\Users\Lera\Desktop\works\css\web.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="C:\Users\Lera\Desktop\works\js\web.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.11/skrollr.min.js"></script>
+</head>
+<body>
+<a id="home" href="#"><i class="fa fa-home"></i></a> 
+
+
+<div id="homePage" class="bckGrnd_A page transition center">
+  <div class="titleWrapper">
+  <h1  data-event="#homePage h2">Lorem ipsum dolor sit amet</h1>
+  <h2 class="invis">consectetur adipiscing elit. Nam tempus interdum auctor.</h2>
+  </div>
+    <a class="more" href="#" data-action="slideRight,#homePage h2"><i class="fa fa-plus-circle"></i></a>
+    <a class="next" data-nextPage="p1" href="#"><i class="fa fa-arrow-circle-right"></i></a>
+  
+  <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+  poster="https://unsplash.imgix.net/39/F9g2FiPUSyC7IybhyI2p_09.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=7e4e433bffbdf68583db15b1bb4e607c"
+  <source src="http://www.eyalkrief.fr/videos/scene_4_9.mp4" type="video/mp4"> Video not supported </video>
+  
+</div> 
+
+<div id="p1" class="bckGrnd_W page transition right">
+  <article><h1 ><span class="sldUp" data-event="#p1 h1 ul li:nth-child(1)">Donec libero leo, placerat at porttitor sit amet, imperdiet sit amet urna:<span>
+    <ul>
+      <li class="enter sldUp" data-event="#p1 h1 ul li:nth-child(2)">egestas bibendum</li>
+      <li class="enter sldUp" data-event="#p1 h1 ul li:nth-child(3)">congue risus</li>
+      <li class="enter">tincidunt</li>
+    </ul>
+  </h1></article>
+  
+     
+    <a class="more" href="#" data-action="slideUp,#p1 h1 ul li:nth-child(1),500;slideUp,#p1 h1 ul li:nth-child(2),500;slideUp,#p1 h1 ul li:nth-child(3),500"><i class="fa fa-plus-circle"></i></a>
+    <a class="back" href="#" data-prevPage="homePage"><i class="fa fa-arrow-circle-left"></i></a> 
+    <a class="next" href="#" data-nextPage="p2"><i class="fa fa-arrow-circle-right"></i></a>
+</div>
+
+<div id="p2" class="bckGrnd_W page transition right">
+  <article>
+    <h1 class="shrinkTextShow bigFitText">Donec dignissim urna eget pellentesque lacinia.</h1><p class="invis" >Integer a lorem vitae urna fringilla aliquet ac ut ipsum. Donec porta, magna vel viverra rutrum, massa mi rhoncus nulla, non ultrices elit turpis vel orci. 
+</p>
+    </article> 
+   <a class="more" href="#" data-action="shrinkText,#p2 article h1,1;fadeIn,#p2 article p,250"><i class="fa fa-plus-circle"></i></a>
+    <a class="back" href="#" data-prevPage="p1"><i class="fa fa-arrow-circle-left"></i></a>
+   <a class="next" href="#" data-nextPage="p3"><i class="fa fa-arrow-circle-right"></i></a>
+</div>
+    
+    <div id="p3" class="bckGrnd_W page transition right">
+         
+  <article>
+    <h1>Demographics</h1>
+    <canvas id="myChart" width="1000" height="350"></canvas>
+    </article> 
+    <a class="back" href="#" data-prevPage="p2"><i class="fa fa-arrow-circle-left"></i></a>
+     <a class="goUp" href="#" data-nextPage="p4"><i class="fa fa-arrow-circle-down"></i></a> 
+   
+</div>
+    
+    <div id="p4" class="bckGrnd_W page transition down">
+      
+      
+
+      <h1>ellentesque gravida metus vel sapien condimentum vulputate. </h1>
+  <div id="map-canvas"></div>
+    
+    <a class="goUp" href="#" data-nextPage="p5"><i class="fa fa-arrow-circle-down"></i></a> 
+    <a class="goDown" href="#" data-prevPage="p3"><i class="fa fa-arrow-circle-up"></i></a> 
+      
+    </div>  
+    
+
+    
+    <div id="p5" class="bckGrnd_W page transition down">
+      <article>
+        <h1>Header</h1>
+        <canvas id="myBarChart" width="400px" height="300px"></canvas>
+        </article>
+        <a class="goUp" href="#" data-nextPage="p6"><i class="fa fa-arrow-circle-down"></i></a>  
+        <a class="goDown" href="#" data-prevPage="p4"><i class="fa fa-arrow-circle-up"></i></a> 
+    </div>
+    
+    <div id="p6" class="bckGrnd_W page transition down">
+      <article>
+        <h1>Page 6</h1>
+        <p>Descriptive text goes here</p>
+        </article>
+         
+        <a class="goDown" href="#" data-prevPage="p5"><i class="fa fa-arrow-circle-up"></i></a> 
+    </div>
+    
+
+    </body>
